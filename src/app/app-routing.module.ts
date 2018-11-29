@@ -34,6 +34,8 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [
         RouterModule.forRoot(appRoutes)  // Tell Angular about our Routes
+        // RouterModule.forRoot(appRoutes, {useHash: true})  // Add Hash to prevent 404 errors --
+        // tells web server to only look at base URL, anything to right of hash is handled by Angular routing
     ],
     exports: [RouterModule]
 })
